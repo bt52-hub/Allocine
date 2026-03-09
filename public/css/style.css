@@ -1,0 +1,48 @@
+/* =========================================
+   CONFIGURATION ROOT
+   ========================================= */
+
+/* * {
+    outline: 1px solid red;
+} */
+
+:root {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    --color-background: #ffffff;
+    --color-text: #213245;
+    --color-muted: #f0f0f0;
+    --color-muted-2: #d0d0d0;
+
+    --color-primary: #E67F22;
+    --color-secondary: #be5900;
+
+}
+
+
+/* RESET ET BASE */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter";
+    background-color: var(--color-background);
+}
+
+main {
+    padding: 2rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
