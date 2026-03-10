@@ -1,0 +1,15 @@
+{
+    "name": "allocine/app",
+    "description": "TP Allocine",
+    "autoload": {
+        "psr-4": {
+            "Root\\App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "John"
+        }
+    ],
+    "require": {}
+}

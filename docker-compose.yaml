@@ -5,7 +5,7 @@ services:
         ports:
             - "8080:80"
         volumes:
-            - ./public:/var/www/html
+            volumes: /.:/var/www/html
 
     database:
         image: mysql:8.0
@@ -16,6 +16,7 @@ services:
             MYSQL_PASSWORD: azerty33
         volumes:
             - mysql_data:/var/lib/mysql
+            - ./mysql/init:/docker-entrypoint-initdb.d
 
     phpmyadmin:
         image: phpmyadmin

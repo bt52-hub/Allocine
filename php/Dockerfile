@@ -9,8 +9,9 @@ RUN apt-get update && apt-get install -y \
     pkg-config \
     libssl-dev
 
-# Installation de l'extension MongoDB
-RUN pecl install mongodb && docker-php-ext-enable mongodb
+RUN docker-php-ext-install pdo pdo_mysql
+
+RUN a2enmod rewrite
 
 # INSTALLATION DE COMPOSER
 # On récupère le fichier binaire de l'image officielle et on le place dans /usr/bin/
