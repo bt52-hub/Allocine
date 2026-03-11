@@ -1,7 +1,12 @@
 RewriteEngine On
 
-# Évite la réécriture si c'est déjà index.php
-RewriteCond %{REQUEST_URI} !^/index\.php
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /index.php [QSA,L]
+# Si fichier existe → ne pas router
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Si dossier existe → ne pas router
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Sinon router vers index
+RewriteRule ^ index.php [QSA,L]

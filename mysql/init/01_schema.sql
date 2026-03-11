@@ -77,7 +77,7 @@ VALUES
 'Une équipe explore un trou de ver pour sauver l’humanité.',
 'interstellar.jpg'),
 ('Pulp Fiction','Quentin Tarantino',1994,154,
-'Une odyssée sanglante et burlesque de petits malfrats dans la jungle de Hollywood',
+'Une odyssée sanglante et burlesque de petits malfrats dans la jungle de Hollywood.',
 'pulp_fiction.jpg'),
 ('La guerre des Mondes','Steven Spielberg',2005,116,
 'La terre se fend, laissant apparaître La première phase d\une attaque massive d\extraterrestres.',

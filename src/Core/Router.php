@@ -44,6 +44,7 @@ final class Router
 
             if (preg_match($pattern, $uri, $matches)) {
                 array_shift($matches); // Retire le match complet, garde les captures
+                $matches = array_map(fn($m) => ctype_digit($m) ? (int)$m : $m, $matches);
 
                 [$controllerClass, $methodName] = $action;
                 $controller = new $controllerClass();
