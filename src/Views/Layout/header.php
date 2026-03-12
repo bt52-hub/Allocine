@@ -19,45 +19,33 @@
     <!-- HEADER -->
     <header class="site-header">
 
-        <nav class="main-nav">
+        <nav class="main-nav container">
 
             <div class="logo">
-
                 <img src="/assets/icons/logo-allocine_pop-corn.svg" class="logo-icon">
-
                 <a href="/" id="logo-text">Allociné</a>
-
             </div>
 
             <button class="burger" id="burger" aria-label="menu">
-
                 <span></span>
                 <span></span>
                 <span></span>
-
             </button>
 
             <ul id="menu" class="menu">
-
                 <?php if (isset($_SESSION['user'])): ?>
                     <li><span class="nav-pseudo">🍿 Bonjour, <?= htmlspecialchars($_SESSION['user']['pseudo']) ?></span></li>
                     <li><a href="/logout">Déconnexion</a></li>
-
                 <?php else: ?>
                     <li><a href="/login">Connexion</a></li>
                     <li><a href="/register">Inscription</a></li>
-
                 <?php endif; ?>
-
             </ul>
 
         </nav>
 
     </header>
 
-
-
-
-    </nav>
-
     <main class="container">
+
+        <main class="container">
